@@ -1,0 +1,237 @@
+span, div {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  border: 1px solid #888888;
+}
+img {
+  border: 0;
+}
+form {
+  display: inline;
+}
+td {
+  background-color: inherit;
+  color: #000000;
+  font-size: 8pt;
+  vertical-align: top;
+  line-height: 1.5;
+}
+textarea {
+  width: 90%;
+}
+ul {
+  margin: 0;
+}
+
+textarea, select, input:not([type="submit"]) {
+  background-color: #EEEEEE;
+  border: 1px solid rgba(0,0,0,0.1);
+  color: #002200;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-size: 8pt;
+  margin: 2px;
+  padding-left: 3px;
+		border-radius:1px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+select {
+	height:25px;
+		border-radius:2px;
+		position:relative;
+		top:-2px;
+}
+select option {
+	height:25px;
+}
+.forum {
+  background-color:#f1f1f1;
+  color:inherit;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-size: 8pt;
+  margin:auto;
+  border-collapse:separate;
+  border-spacing:1px;
+		border-radius:5px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.forum tr td {
+		border-radius:5px;
+}
+.headb {
+  background-color:#FFFFFF;
+  color:#B91F1D;
+  text-transform: uppercase;
+  padding:4px 6px 4px 8px;
+  text-align:left;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+.bottom {
+  background-color:#FFFFFF;
+  color:inherit;
+  padding:4px 6px 4px 8px;
+  text-align:left;
+}
+.newshead {
+  background-color:#FFFFFF;
+  color:#B91F1D;
+  font-size:14px;
+  padding:4px 6px 4px 8px;
+  text-align:left;
+  letter-spacing: 1px;
+}
+.left,.center,.right {
+  padding:1px;
+}
+.leftb,.centerb,.rightb {
+  background-color:#FFFFFF;
+  color:#222222;
+  padding:4px 6px 4px 8px;
+		vertical-align:middle;
+}
+.leftc,.centerc,.rightc {
+  background-color:#F2F2F2;
+  color:#222222;
+  padding:4px 6px 4px 8px;
+		vertical-align:middle;
+}
+.left,.leftb,.leftc {
+  text-align:left;
+}
+.center,.centerb,.centerc {
+  text-align:center;
+}
+.right,.rightb,.rightc {
+  text-align:right;
+}
+.notpublic {
+  background-color:#F5F5F5 !important;
+  color:#CCC !important;
+  font-style:italic;
+}
+
+.quote {
+  background-color:#EEEEEE;
+  border:1px dashed #888888;
+  color:inherit;
+  padding:6px;
+  text-align:left;
+}
+.h1 {
+  color: #333333;
+  font-size: 14pt;
+  font-weight: bold;
+  text-decoration: none;
+}
+.h2 {
+  color: #333333;
+  font-size: 16pt;
+  font-weight: normal;
+  text-decoration: none;
+}
+.h3 {
+  color: #333333;
+  font-size: 20pt;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#msg_normal, #msg_success {
+  width: 90%;
+  color:inherit;
+  margin:auto;
+  border: 1px solid #888;
+  margin-bottom: 10px;
+  text-align:center;
+}
+#msg_normal div, #msg_success div {
+  padding: 8px 0 8px 20px;
+}
+#msg_normal {
+  background-color: #fff;
+}
+#msg_success {
+  background-color: #ddffdd;
+}
+
+/*Cal*/
+.calhead {
+  background-color:#FFFFFF;
+  color:inherit;
+  padding:4px 2px 4px 2px;
+  text-align:center;
+}
+.calday,.calevent,.caltoday, .calweek {
+  padding:4px 2px 4px 2px;
+  text-align:right;
+}
+.calday {
+  background-color:#FFFFFF;
+  color:inherit;
+}
+.calevent {
+  background-color:#EEEEEE;
+  color:inherit;
+}
+.caltoday {
+  background-color:#FFE0E0;
+  color:inherit;
+}
+.calweek {
+  background-color:#FFFFFF;
+  color:inherit;
+}
+
+/*Manage*/
+.manage {
+  background-color: #F8F8F8;
+  margin: 5px;
+		border-radius:1px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.manage:hover {
+  background-color:#E2E2E2;
+}
+.manage a {
+  padding: 5px 0px 0px 0px;
+		height:100%;
+}
+
+/*Themebar*/
+.themebar {
+  border: 1px dashed #777777;
+  margin: 4px 8px 4px 8px;
+  padding: 4px;
+}
+
+/* UserStatus */
+.uonline {
+  padding: 4px 0 4px 0; 
+  color: #00BB00;
+}
+
+.uoffline {
+  padding: 4px 0 4px 0; 
+  color: maroon;
+}
+
+.uinactive {
+  padding: 4px 0 4px 0; 
+  color: #555555
+}
+
+.uthreadstarter {
+  color: #aa5500;
+}
+
+.thread_author_comment .leftc {
+  background-color:#f1eae6;
+}

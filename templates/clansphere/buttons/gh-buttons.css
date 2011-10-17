@@ -1,0 +1,327 @@
+/* ------------------------------------------
+CSS3 GITHUB BUTTONS (Nicolas Gallagher)
+Licensed under Unlicense 
+http://github.com/necolas/css3-github-buttons
+------------------------------------------ */
+
+@font-face {
+  font-family: 'IconicStroke';
+    src: url("iconic_stroke.eot");
+    src: local('IconicStroke'),
+       url("iconic_stroke.svg#iconic") format('svg'),
+	   url("iconic_stroke.otf") format('opentype');
+}
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON */
+
+.button { 
+    position: relative; 
+    overflow: visible; 
+    display: inline-block; 
+    padding: 0.5em 0.5em; 
+    border: 1px solid #d4d4d4; 
+    margin: 0;
+    text-decoration: none; 
+    text-shadow: 1px 1px 0 #fff; 
+    font:11px/normal sans-serif; 
+    color: #333; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    outline: none; 
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box; 
+    /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+    -webkit-border-radius: 0.2em; 
+    -moz-border-radius: 0.2em; 
+    border-radius: 0.2em; 
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.button:hover,
+.button:focus,
+.button:active,
+.button.active {
+    border-color: #3072b3;
+    border-bottom-color: #2a65a0;
+    text-decoration: none; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    color: #fff; 
+    background-color: #3C8DDE;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: -o-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3);
+}
+
+.button:active,
+.button.active {
+    border-color: #2a65a0;
+    border-bottom-color: #3884CF;
+    background-color: #3072b3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+    background-image: -moz-linear-gradient(#3072b3, #599bdc);
+    background-image: -o-linear-gradient(#3072b3, #599bdc);
+    background-image: linear-gradient(#3072b3, #599bdc);
+}
+
+/* overrides extra padding on button elements in Firefox */
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* ............................................................................................................. Icons */
+
+.button.icon:before {
+    content: "";
+    position: relative; 
+    top: 1px; 
+    float:left;
+    width: 12px; 
+    height: 12px; 
+    margin: 0 0.75em 0 -0.25em; 
+				color:inherit;
+				font-family: "IconicStroke";
+				font-size:16px;
+}
+
+.button.icon.home:before { content: '!'; }
+.button.icon.at:before { content: "@"; }
+.button.icon.quote:before { content: '"'; }
+.button.icon.quote-alt:before { content: "'"; }
+.button.icon.arrow-up:before { content: "3"; }
+.button.icon.arrow-right:before { content: "4"; }
+.button.icon.arrow-bottom:before { content: "5"; }
+.button.icon.arrow-left:before { content: "6"; }
+.button.icon.arrow-up-alt:before { content: "#"; }
+.button.icon.arrow-right-alt:before { content: "$"; }
+.button.icon.arrow-bottom-alt:before { content: "%"; }
+.button.icon.arrow-left-alt:before { content: "^"; }
+.button.icon.move:before { content: "9"; }
+.button.icon.move-vertical:before { content: "8"; }
+.button.icon.move-horizontal:before { content: "7"; }
+.button.icon.move-alt:before { content: "("; }
+.button.icon.move-vertical-alt:before { content: "*"; }
+.button.icon.move-horizontal-alt:before { content: "&"; }
+.button.icon.cursor:before { content: ")"; }
+.button.icon.plus:before { content: "+"; }
+.button.icon.plus-alt:before { content: "="; }
+.button.icon.minus:before { content: "-"; }
+.button.icon.minus-alt:before { content: "_"; }
+.button.icon.new-window:before { content: "1"; }
+.button.icon.dial:before { content: "2"; }
+.button.icon.lightbulb:before { content: "0"; }
+.button.icon.link:before { content: "/"; }
+.button.icon.image:before { content: "?"; }
+.button.icon.article:before { content: ">"; }
+.button.icon.read-more:before { content: "."; }
+.button.icon.headphones:before { content: ","; }
+.button.icon.equalizer:before { content: "<"; }
+.button.icon.fullscreen:before { content: ":"; }
+.button.icon.exit-fullscreen:before { content: ";"; }
+.button.icon.spin:before { content: "["; }
+.button.icon.spin-alt:before { content: "{"; }
+.button.icon.moon:before { content: "]"; }
+.button.icon.sun:before { content: "}"; }
+.button.icon.map-pin:before { content: "\\"; }
+.button.icon.pin:before { content: "|"; }
+.button.icon.eyedropper:before { content: "~"; }
+.button.icon.denied:before { content: "`"; }
+.button.icon.calendar:before { content: "a"; }
+.button.icon.calendar-alt:before { content: "A"; }
+.button.icon.bolt:before { content: "b"; }
+.button.icon.clock:before { content: "c"; }
+.button.icon.document:before { content: "d"; }
+.button.icon.book:before { content: "e"; }
+.button.icon.book-alt:before { content: "E"; }
+.button.icon.magnifying-glass:before { content: "f"; }
+.button.icon.tag:before { content: "g"; }
+.button.icon.heart:before { content: "h"; }
+.button.icon.info:before { content: "i"; }
+.button.icon.chat:before { content: "j"; }
+.button.icon.chat-alt:before { content: "J"; }
+.button.icon.key:before { content: "k"; }
+.button.icon.unlocked:before { content: "l"; }
+.button.icon.locked:before { content: "L"; }
+.button.icon.mail:before { content: "m"; }
+.button.icon.mail-alt:before { content: "M"; }
+.button.icon.phone:before { content: "n"; }
+.button.icon.box:before { content: "o"; }
+.button.icon.pencil:before { content: "p"; }
+.button.icon.pencil-alt:before { content: "P"; }
+.button.icon.comment:before { content: "q"; }
+.button.icon.comment-alt:before { content: "Q"; }
+.button.icon.rss:before { content: "r"; }
+.button.icon.star:before { content: "s"; }
+.button.icon.trash:before { content: "t"; }
+.button.icon.user:before { content: "u"; }
+.button.icon.volume:before { content: "v"; }
+.button.icon.mute:before { content: "V"; }
+.button.icon.cog:before { content: "w"; }
+.button.icon.cog-alt:before { content: "W"; }
+.button.icon.x:before { content: "x"; }
+.button.icon.x-alt:before { content: "X"; }
+.button.icon.check:before { content: "y"; }
+.button.icon.check-alt:before { content: "Y"; }
+.button.icon.beaker:before { content: "z"; }
+.button.icon.beaker-alt:before { content: "Z"; }
+
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON EXTENSIONS */
+
+/* ............................................................................................................. Primary */
+
+.button.primary {
+    font-weight: bold;
+}
+
+/* ............................................................................................................. Danger */
+
+.button.danger {
+    color: #900;
+}
+
+.button.danger:hover,
+.button.danger:focus,
+.button.danger:active {     
+    border-color: #b53f3a;
+    border-bottom-color: #a0302a;
+    color: #fff; 
+    background-color: #dc5f59;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
+    background-image: -moz-linear-gradient(#dc5f59, #b33630);
+    background-image: -o-linear-gradient(#dc5f59, #b33630);
+    background-image: linear-gradient(#dc5f59, #b33630);
+}
+
+.button.danger:active,
+.button.danger.active {   
+    border-color: #a0302a;
+    border-bottom-color: #bf4843;
+    background-color: #b33630;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b33630), to(#dc5f59));
+    background-image: -moz-linear-gradient(#b33630, #dc5f59);
+    background-image: -o-linear-gradient(#b33630, #dc5f59);
+    background-image: linear-gradient(#b33630, #dc5f59);
+}
+
+/* ............................................................................................................. Pill */
+
+.button.pill {
+    -webkit-border-radius: 50em; 
+    -moz-border-radius: 50em; 
+    border-radius: 50em; 
+}
+
+/* ............................................................................................................. Disable */
+
+.button.disable {
+    opacity: 0.5;
+}
+
+/* ............................................................................................................. Big */
+
+.button.big {
+    font-size: 14px; 
+}
+
+.button.big.icon:before { top: 0; }
+
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
+
+/* ............................................................................................................. Standard */
+
+.button-group {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.button + .button-group,
+.button-group + .button,
+.button-group + .button-group {
+    margin-left: 15px;
+}
+
+.button-group li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.button-group .button {
+    float: left;
+    margin-left: -1px; 
+}
+
+.button-group > .button:not(:first-child):not(:last-child),
+.button-group li:not(:first-child):not(:last-child) .button { 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0; 
+    border-radius: 0; 
+}
+
+.button-group > .button:first-child,
+.button-group li:first-child .button { 
+    margin-left: 0; 
+    -webkit-border-top-right-radius: 0; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+}
+
+.button-group > .button:last-child,
+.button-group li:last-child > .button { 
+    -webkit-border-top-left-radius: 0; 
+    -webkit-border-bottom-left-radius: 0; 
+    -moz-border-radius-topleft: 0; 
+    -moz-border-radius-bottomleft: 0; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+}
+
+/* ............................................................................................................. Minor */
+
+.button-group.minor-group .button {
+    border: 1px solid #d4d4d4; 
+    text-shadow: none;
+    background-image: none;
+    background-color: #fff;
+}
+
+.button-group.minor-group .button:hover,
+.button-group.minor-group .button:focus {
+    background-color: #599bdc;
+}
+
+.button-group.minor-group .button:active,
+.button-group.minor-group .button.active {
+    background-color: #3072b3;
+}
+
+.button-group.minor-group .button.icon:before {
+    opacity: 0.8;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON CONTAINER */
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+
+.button-container .button,
+.button-container .button-group {
+    vertical-align: top;
+}

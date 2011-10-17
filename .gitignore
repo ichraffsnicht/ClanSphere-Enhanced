@@ -1,0 +1,16 @@
+/*.patch
+/*.sqlite
+/.buildpath
+/.htaccess
+/.project
+/.settings
+/setup.php
+/setup*.php
+/web.config
+/nbproject
+/uploads/cache/*.tmp
+/uploads/imprint/*.txt
+/uploads/logs/actions/*.log
+/uploads/logs/errors/*.log
+/uploads/rss/*.xml
+/uploads/users/nopicture.*
