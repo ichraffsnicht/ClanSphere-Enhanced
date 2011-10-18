@@ -43,4 +43,7 @@
   <tr>
     <td class="leftc"> Country Icons by <a href="http://www.famfamfam.com" target="_blank">FAMFAMFAM</a> </td>
   </tr>
+  <tr>
+    <td class="leftc"> Enhanced Version is powered by ichraffsnicht aka X-R4Y | ClanSphere Developer <a href="http://www.ich-raffs-nicht.de" target="_blank">www.ich-raffs-nicht.de</a> </td>
+  </tr>
 </table>
