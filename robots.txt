@@ -3,3 +3,4 @@ Disallow: /lang/
 Disallow: /mods/
 Disallow: /system/
 Disallow: /themes/
+Disallow: /uploads/cache
