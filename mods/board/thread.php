@@ -97,7 +97,7 @@ if($account['access_board'] < $data['thread']['board_access'] AND empty($check_s
       $abo_lang = $cs_lang['del_abo'];
       $m_action = '&amp;delabo';
     }
-    $data['thread']['abo'] = cs_link($abo_lang,'board','thread','where=' .$id . $m_action);
+    $data['thread']['abo'] = cs_link($abo_lang,'board','thread','where=' .$id . $m_action,'button');
 
     if(isset($_GET['newabo']) AND empty($cs_abo)) {
       $abonements_cells = array('users_id','threads_id');
@@ -166,8 +166,8 @@ if($account['access_board'] < $data['thread']['board_access'] AND empty($check_s
    echo ' - ' .cs_link($cs_lang['modpanel'],'board','modpanel','id=' .$id);
    }*/
   //vorheriges - letztes thema
-  $data['thread']['categories_link'] = cs_link($data['thread']['categories_name'],'board','list','id=' .$data['thread']['categories_id']);
-  $data['thread']['board_link'] = cs_link(cs_secure($data['thread']['board_name']),'board','listcat','id=' .$data['thread']['board_id']);
+  $data['thread']['categories_link'] = cs_url('board','list','id=' .$data['thread']['categories_id']);
+  $data['thread']['board_link'] = cs_url('board','listcat','id=' .$data['thread']['board_id']);
   #$arimportant = array('',$cs_lang['important']);
   $important = $data['thread']['threads_important'];
   #$data['thread']['abo'] = cs_secure($arimportant[$important],1) . ' ';
