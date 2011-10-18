@@ -7,7 +7,7 @@
     <td class="rightb">{thread:abo}</td>
   </tr>
   <tr>
-    <td class="leftc" colspan="2"><a href="#" id="threadanch"></a><a href="{url:board_list}">{lang:board}</a> -&gt; {thread:categories_link} -&gt; {thread:board_link} -&gt;  {thread:thread_link} </td>
+    <td class="leftc" colspan="2"><a href="#" id="threadanch"></a><a href="{url:board_list}" class="button">{lang:board}</a> <a href="{thread:categories_link}" class="button icon arrow-right">{thread:categories_name}</a> <a href="{thread:board_link}" class="button icon arrow-right">{thread:board_name}</a> <span class="button icon arrow-bottom disable">{thread:thread_link}</span> </td>
   </tr>
 </table>
 <br />
@@ -207,7 +207,7 @@
 <form method="post" id="boardmodpanel_q" action="{url:board_modpanel_q:id={thread:threads_id}}">
   <table class="forum" cellpadding="0" cellspacing="{page:cellspacing}" style="width:{page:width}">
     <tr>
-      <td class="centerb"> {if:modp_close}
+      <td class="centerb"><div class="button-group"> {if:modp_close}
         <input type="submit" class="button" name="close" value="{lang:thread_close}" />
         {stop:modp_close}
         {if:modp_open}
@@ -221,6 +221,7 @@
         {stop:modp_addpin}
         <input type="submit" class="button" name="move" value="{lang:thread_move}" />
         <input type="submit" class="button" name="rename" value="{lang:thread_rename}" />
+        </div>
         <input type="hidden" name="id" value="{thread:threads_id}" />
       </td>
     </tr>
