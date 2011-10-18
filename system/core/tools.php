@@ -388,7 +388,7 @@ function cs_pages($mod, $action, $records, $start, $where = 0, $sort = 0, $limit
   $last = $actual <= 2 ? 0 : $start - $limit;
   $next = $actual >= $pages ? ($pages - 1) * $limit : $start + $limit;
   $more = 'start=' . $last . $add_where . $add_sort;
-  $result = (empty($small) AND $actual != 1) ? cs_link('&lt;',$mod,$action,$more) . ' ' : '';
+  $result = (empty($small) AND $actual != 1) ? cs_link('-',$mod,$action,$more,'button primary') . ' ' : '';
 
   $run = 0;
   while($maxpages > 0) {
@@ -402,16 +402,16 @@ function cs_pages($mod, $action, $records, $start, $where = 0, $sort = 0, $limit
       $run = $pages - 2;
     }
     if($run == $actual AND empty($small)) {
-      $result .= ' [' . $run . '] ';
+      $result .= ' <span class="button primary disable">' . $run . '</span>';
     }
     else {
       $more = 'start=' . ($run - 1) * $limit . $add_where . $add_sort;
-      $result .= ' ' . cs_link($run,$mod,$action,$more);
+      $result .= ' ' . cs_link($run,$mod,$action,$more,'button');
     }
     $maxpages--;
   }
   $more = 'start=' . $next . $add_where . $add_sort;
-  $result .= (empty($small) AND $actual != $pages) ? ' ' . cs_link('&gt;',$mod,$action,$more): '';
+  $result .= (empty($small) AND $actual != $pages) ? ' ' . cs_link('+',$mod,$action,$more,'button primary'): '';
 
   $cs_lang = cs_translate($mod);
   $result = $cs_lang['page'] . ' ' . $result;
@@ -609,7 +609,7 @@ function cs_user($users_id, $users_nick, $users_active = 1, $users_delete = 0) {
   settype($users_id, 'integer');
   $users_nick = cs_secure($users_nick);
   if(!empty($users_active) && empty($users_delete))
-    return cs_link($users_nick, 'users', 'view', 'id=' . $users_id);
+    return cs_link($users_nick, 'users', 'view', 'id=' . $users_id,'button icon user');
   else
     return $users_nick;
 }
