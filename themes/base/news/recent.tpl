@@ -26,7 +26,7 @@
  <tr>
   <td class="bottom">
     <div style="float:left">{news:news_time} - {news:users_link}</div>
-    <div style="float:right">{news:comments_link} ({news:comments_count})</div>
+    <div style="float:right"><a class="button icon comment" href="{news:comments_link}">{lang:comments} | {news:comments_count}</a></div>
   </td>
  </tr>
  <tr>

@@ -30,7 +30,7 @@ if(!empty($pub)) {
 
   $start = floor($data['news']['comments_count'] / ($account['users_limit'] + 1)) * $account['users_limit'];
   $cs_news_com_count = $data['news']['comments_count'] - $start;
-  $data['news']['comments_link'] = cs_link($cs_lang['comments'],'news','view','id=' . $cs_news['news_id'] . '&amp;start=' . $start . '#com' . $cs_news_com_count);
+  $data['news']['comments_link'] = cs_url('news','view','id=' . $cs_news['news_id'] . '&amp;start=' . $start . '#com' . $cs_news_com_count);
 
   $cs_main['page_title'] = $cs_news['news_headline'];
   $data['news']['news_headline'] = cs_secure($cs_news['news_headline']);

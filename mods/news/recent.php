@@ -79,7 +79,7 @@ for($run = 0; $run < $news_loop; $run++) {
   $cs_news[$run]['comments_count'] = cs_sql_count(__FILE__, 'comments', $where3);
   $start = floor($cs_news[$run]['comments_count'] / ($account['users_limit'] + 1)) * $account['users_limit'];
   $cs_news_com_count = $cs_news[$run]['comments_count'] - $start;
-  $cs_news[$run]['comments_link'] = cs_link($cs_lang['comments'], 'news', 'view', 'id=' . $cs_news[$run]['news_id'] . '&amp;start=' . $start . '#com' . $cs_news_com_count);
+  $cs_news[$run]['comments_link'] = cs_url('news', 'view', 'id=' . $cs_news[$run]['news_id'] . '&amp;start=' . $start . '#com' . $cs_news_com_count);
   $cs_news[$run]['categories_name'] = cs_secure($cs_news[$run]['categories_name']);
 
   $cs_news[$run]['if']['catimg'] = empty($cs_news[$run]['categories_picture']) ? false : true;
