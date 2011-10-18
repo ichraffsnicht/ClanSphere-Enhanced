@@ -1,8 +1,8 @@
-<a class="button" href="{url:users_home}">{lang:home}</a>
+<a class="button icon home" href="{url:users_home}">{lang:home}</a>
+<a class="button icon cog" href="{url:users_settings}">{lang:settings}</a>
 {if:messages}
   <a class="button" href="{url:messages_inbox}">{lang:messages} | <span id="cs_messages_navmsgs">{messages:new}</span></a>
 {stop:messages}
-<a class="button" href="{url:users_settings}">{lang:settings}</a>
 
 {if:more}
   {if:contact}
@@ -15,13 +15,13 @@
     <a class="button" href="{url:fightus_manage}">{lang:fightus} | <span>{fightus:fightus_count}</span></a>
   {stop:fightus}
   {if:admin}
-    <a class="button" href="{url:clansphere_admin}">{lang:admin}</a>
+    <a class="button icon document" href="{url:clansphere_admin}">{lang:admin}</a>
   {stop:admin}
   {if:system}
-    <a class="button" href="{url:clansphere_system}">{lang:system}</a>
+    <a class="button icon cog" href="{url:clansphere_system}">{lang:system}</a>
   {stop:system}
   {if:panel}
     <a class="button" href="{link:panel}">{lang:panel}</a>
   {stop:panel}
 {stop:more}
-<a class="danger button" href="{url:users_logout}">{lang:logout}</a>
+<a class="danger button icon key" href="{url:users_logout}">{lang:logout}</a>
