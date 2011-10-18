@@ -1,3 +1,4 @@
+<div class="button-group">
 <a class="button icon home" href="{url:users_home}">{lang:home}</a>
 <a class="button icon cog" href="{url:users_settings}">{lang:settings}</a>
 {if:messages}
@@ -25,3 +26,4 @@
   {stop:panel}
 {stop:more}
 <a class="danger button icon key" href="{url:users_logout}">{lang:logout}</a>
+</div>
