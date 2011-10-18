@@ -11,7 +11,7 @@ if (!empty($cs_post['start']))  $start = $cs_post['start'];
 
 $gbook_count = cs_sql_count(__FILE__,'gbook',"gbook_users_id = '0' AND gbook_lock = '1'");
 
-$data['head']['entry'] = cs_link($cs_lang['submit'],'gbook','entry','id=0&amp;from=list');
+$data['head']['entry'] = cs_url('gbook','entry','id=0&amp;from=list');
 $data['head']['count'] = $gbook_count;
 $data['head']['pages'] = cs_pages('gbook','list',$gbook_count,$start);
 $data['head']['getmsg'] = cs_getmsg();

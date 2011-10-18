@@ -3,7 +3,7 @@
     <td class="headb" colspan="3">{lang:mod_name} - {lang:head_list}</td>
   </tr>
   <tr>
-    <td class="leftb">{icon:editpaste} {head:entry}</td>
+    <td class="leftb"><a href="{head:entry}" class="button icon pencil">{lang:submit}</a></td>
     <td class="leftb">{icon:contents} {lang:total}: {head:count}</td>
     <td class="rightb">{head:pages}</td>
   </tr>
