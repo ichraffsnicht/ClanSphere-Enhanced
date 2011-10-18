@@ -1,3 +1,7 @@
+THIS VERSION OF CLANSPHERE BASED ON THE TRUNK REVISION 4954
+
+Actually im searching vor developers who fork this projekt or post some issues!
+
   _____ _              _____       _                   
  / ____| |            / ____|     | |                  
 | |    | | __ _ _ __ | (___  _ __ | |__   ___ _ __ ___ 
